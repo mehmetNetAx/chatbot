@@ -1,6 +1,7 @@
 import streamlit as st
 
 # ---- Pages
+st.write('deneme')
 about_page = st.Page(
     page="views/about.py",
     title="About",
