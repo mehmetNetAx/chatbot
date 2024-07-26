@@ -1,7 +1,15 @@
 import streamlit as st
 
 # ---- Pages
-st.write('deneme')
+st.page_link("streamlit_app.py", label="Home", icon="🏠")
+
+st.page_link("views/about.py", label="Page 1", icon="1️⃣")
+st.page_link("views/chatbot.py", label="Page 2", icon="2️⃣", disabled=True)
+st.page_link("views/contract_create.py", label="Page 3", icon="2️⃣", disabled=True)
+st.page_link("views/contract_fill.py", label="Page 4", icon="2️⃣", disabled=True)
+st.page_link("views/dashboard.py", label="Page 5", icon="2️⃣", disabled=True)
+
+
 about_page = st.Page(
     page="views/about.py",
     title="About",
